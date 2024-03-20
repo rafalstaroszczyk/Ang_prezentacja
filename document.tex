@@ -136,13 +136,55 @@ G\pab{a,b} = \sum_{i=1}^{n}e_{i}^{2} = \sum_{i=1}^{n}\pab{y_{i} - a x_{i} - b}^{
 \end{frame}
 
 \section{Dynamical Systems}
-\begin{frame}{Lotka-Volterra Model}
+\begin{frame}{Lotka Model}
+\begin{columns}
+\begin{column}{0.5\textwidth}
 \begin{block}{Equations}
 \begin{align*}
-\odv{x}{t} &= \alpha x - \beta x y \\
-\odv{y}{t} &= \delta x y - \gamma y
+\odv{x}{\tau} &= a - axy \\
+\odv{y}{\tau} &= xy - y
 \end{align*}
 \end{block}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+DO WSTAWIENIA
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Lotka-Volterra Model}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Equations}
+\begin{align*}
+\odv{x}{\tau} &= ax - axy \\
+\odv{y}{\tau} &= xy - y
+\end{align*}
+\end{block}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+DO WSTAWIENIA
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Brusselator Model}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Equations}
+\begin{align*}
+\odv{x}{\tau} &= 1 + ax^{2}y - ax - x \\
+\odv{y}{\tau} &= -bx^{2}y + bx
+\end{align*}
+\end{block}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+DO WSTAWIENIA
+\end{column}
+\end{columns}
 \end{frame}
 
 \end{document}
