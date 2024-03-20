@@ -84,7 +84,7 @@ Theory is the base of science. It requires falsifiable model described mathemati
 \begin{column}{0.5\textwidth}
 \begin{figure}
 \includegraphics[width=\textwidth]{The_Scientific_Method.png}
-\caption{Source: wikimedia.org, Author:  	Efbrazil}
+\caption{Source: wikimedia.org, Author: Efbrazil}
 \end{figure}
 \end{column}
 \end{columns}
@@ -105,6 +105,44 @@ Helmholtz & \(\pab{\laplacian + k^{2}}V = 0\) \\ [1em]
 Wave & \(\pab{\laplacian - \inv{c^{2}}\pdv[order=2]{}{t}}V = 0\)
 \end{tabular}
 \end{table}
+\end{frame}
+
+\begin{frame}{Solving differential equation}
+\begin{block}{Gauss's Law in Linear Medium}
+\begin{align*}
+\div\vb{E} &= \frac{\rho_{f}}{\varepsilon_{r}\varepsilon_{0}} & \oint_{\mathcal{S}}\vb{E}\cdot\vb{\d{S}} &= \frac{Q_{f}}{\varepsilon_{r}\varepsilon_{0}}
+\end{align*}
+\end{block}
+\begin{block}{Capacitor equation}
+\begin{equation*}
+C = \frac{Q_{f}}{V} = \varepsilon_{r}\varepsilon_{0}\frac{S}{d}
+\end{equation*}
+\end{block}
+\end{frame}
+
+\section{Linear Regression}
+\begin{frame}{Linear Regression}
+\begin{block}{Model}
+\begin{align*}
+y_{i} &= a x_{i} + b + e_{i} & y_{i} &= C_{i} & a &= \varepsilon_{r}\varepsilon_{0}S & x_{i} &= \inv{d_{i}} & b &= C_{0}
+\end{align*}
+\end{block}
+\begin{block}{Least Squares Method}
+\begin{gather*}
+G\pab{a,b} = \sum_{i=1}^{n}e_{i}^{2} = \sum_{i=1}^{n}\pab{y_{i} - a x_{i} - b}^{2} \\
+\pdv{G\pab{a,b}}{a} = 0 \quad \pdv{G\pab{a,b}}{b} = 0
+\end{gather*}
+\end{block}
+\end{frame}
+
+\section{Dynamical Systems}
+\begin{frame}{Lotka-Volterra Model}
+\begin{block}{Equations}
+\begin{align*}
+\odv{x}{t} &= \alpha x - \beta x y \\
+\odv{y}{t} &= \delta x y - \gamma y
+\end{align*}
+\end{block}
 \end{frame}
 
 \end{document}
